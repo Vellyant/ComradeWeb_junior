@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alliance</title>
+    <link rel="stylesheet" href="main.css" />
+    <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: -34.397, lng: 150.644 },
+          zoom: 8,
+        });
+      }
+      window.initMap = initMap;
+
+      function openNav() {
+        document.getElementById("menu").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("menu").style.width = "0";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Шапка  -->
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Alliance moving & storage" class="logo" />
+      </div>
+
+      <nav id="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;
+        </a>
+        <a href="#">Local Movers</a>
+        <a href="#">Long Distance</a>
+        <a href="#">Storage</a>
+        <a href="#">About Us</a>
+        <a href="#">Service Area</a>
+      </nav>
+      <div class="header_phone">
+        <div class="line"></div>
+        <address>
+          <img src="icon_phone.png" alt="icon" class="img_logo" />
+          <span style="margin-left: 10px; margin-right: 20px">
+            847-378-4949
+          </span>
+          <input type="button" value="Get a Quote" class="btn_header" />
+        </address>
+      </div>
+
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </header>
+
+    <!-- Главная  -->
+    <main>
+      <div class="banner">
+        <img src="banner.png" alt="family" class="img_banner" />
+        <div class="banner_bgr">
+          <div class="text_banner">
+            <span>
+              Looking For A Professional Moving Company in Chicago, IL?
+            </span>
+            <p>
+              Alliance Moving & Storage is a family-operated moving company
+              based in Rolling Meadows. Our mission is to provide professional,
+              affordable, and reliable moving solutions for residential and
+              commercial needs in the Chicagoland area.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="title_what_do">
+        <span class="small">what we do</span> <br />
+        <span class="big">Professional Moving Services</span> <br />
+        <span class="text">
+          From cross-country moves to anywhere in between, <br />
+          distance moving can be simple. We’ll help you get there
+        </span>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="box.png" alt="icon" class="icon_card" /> <br />
+          <span class="title">Residential Moving</span>
+          <p class="description">
+            Managing every detail, big or small, to help you have the smoothest
+            move possible. We’ll help you arrive home
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="box.png" alt="icon" class="icon_card" /> <br />
+          <span class="title">Residential Moving</span>
+          <p class="description">
+            Managing every detail, big or small, to help you have the smoothest
+            move possible. We’ll help you arrive home
+          </p>
+        </div>
+        <div class="card">
+          <img src="box.png" alt="icon" class="icon_card" /> <br />
+          <span class="title">Residential Moving</span>
+          <p class="description">
+            Managing every detail, big or small, to help you have the smoothest
+            move possible. We’ll help you arrive home
+          </p>
+        </div>
+        <div class="card">
+          <img src="box.png" alt="icon" class="icon_card" /> <br />
+          <span class="title">Residential Moving</span>
+          <p class="description">
+            Managing every detail, big or small, to help you have the smoothest
+            move possible. We’ll help you arrive home
+          </p>
+        </div>
+        <div class="card">
+          <img src="box.png" alt="icon" class="icon_card" /> <br />
+          <span class="title">Residential Moving</span>
+          <p class="description">
+            Managing every detail, big or small, to help you have the smoothest
+            move possible. We’ll help you arrive home
+          </p>
+        </div>
+        <div class="card">
+          <img src="box.png" alt="icon" class="icon_card" /> <br />
+          <span class="title">Residential Moving</span>
+          <p class="description">
+            Managing every detail, big or small, to help you have the smoothest
+            move possible. We’ll help you arrive home
+          </p>
+        </div>
+      </div>
+
+      <div class="location">
+        <div>
+          <div class="text">
+            <span style="font-size: 12px; color: #738697">we are local</span>
+            <br />
+            <span>We proudly serve the Chicagoland area</span>
+            <p>
+              Alliance Moving & Storage is a family-operated moving company
+              based in Rolling Meadows. Our mission is to provide professional,
+              affordable, and reliable moving
+            </p>
+          </div>
+          <address>
+            <img src="icon_phone.png" alt="icon" />
+            <span>
+              3201 TOLLVIEW DRIVE ROLLING MEADOWS, IL 60008 4305 N. LINCOLN AVE
+            </span>
+            <br />
+            <img src="icon_phone.png" alt="icon" />
+            <span>CHICAGO, IL 60618 </span><br />
+            <img src="icon_phone.png" alt="icon" />
+            <span>(847) 378-4949</span>
+          </address>
+        </div>
+        <form class="form">
+          <span class="form_title">Get In Touch</span> <br />
+          <div class="field_tw">
+            <div>
+              <label for="name" class="add"> Full Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+              <label for="phone" class="add"> Phone</label>
+              <input type="tel" name="phone" id="phone" required />
+            </div>
+          </div>
+          <br />
+          <div class="field">
+            <label for="email" class="add">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <br />
+          <div class="field">
+            <label for="notes">Notes</label>
+            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+          </div>
+          <br />
+
+          <input type="submit" value="Submit" class="btn_form" />
+        </form>
+      </div>
+      <div class="map" id="map"></div>
+
+      <div class="news">
+        <div class="title">
+          <div>
+            <span class="s">BLOG</span><br />
+            <span class="b">Our latest moving tips</span>
+          </div>
+          <input type="button" value="View All" class="btn_blog" />
+        </div>
+        <div class="cards_news">
+          <div class="card_news">
+            <img src="blog.png" alt="wash" class="img_blog" />
+            <div>
+              <span class="date">December 16, 21</span><br />
+              <span class="name">How to move during COVID</span>
+              <p>
+                It depends on the size of your room It depends on the size of
+                your room It depends on the size of your room
+              </p>
+            </div>
+          </div>
+          <div class="card_news">
+            <img src="blog.png" alt="wash" class="img_blog" />
+            <div>
+              <span class="date">December 16, 21</span><br />
+              <span class="name">How to move during COVID</span>
+              <p>
+                It depends on the size of your room It depends on the size of
+                your room It depends on the size of your room
+              </p>
+            </div>
+          </div>
+          <div class="card_news">
+            <img src="blog.png" alt="wash" class="img_blog" />
+            <div>
+              <span class="date">December 16, 21</span><br />
+              <span class="name">How to move during COVID</span>
+              <p>
+                It depends on the size of your room It depends on the size of
+                your room It depends on the size of your room
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ПОДВАЛ  -->
+    <footer>
+      <hr />
+      <div>
+        <span>© ALLIANCE MOVING AND STORAGE. ALL RIGHTS RESERVED </span>
+        <span> PRIVACY POLICY | CONSUMER INFORMATION ITLL </span>
+        <span> MC: 214854 - USDOT: 2882675 </span>
+        <span>Made by Comrade</span>
+      </div>
+    </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
