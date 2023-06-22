@@ -510,4 +510,26 @@ footer div {
     font-size: 36px;
     margin-left: 50px;
   }
+  .location {
+    flex-wrap: wrap;
+  }
+  .cards {
+    position: relative;
+  }
+  .card {
+    width: 90%;
+  }
+
+  .card_news {
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .title_what_do .big {
+    padding: 10px 16px;
+    font-size: 20px;
+  }
+  .title_what_do .text {
+    font-size: 14px;
+  }
 }
